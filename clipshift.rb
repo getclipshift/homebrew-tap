@@ -4,21 +4,21 @@
 class Clipshift < Formula
   desc ""
   homepage "https://github.com/getclipshift/clipshift"
-  version "0.1.14-beta.1"
+  version "0.1.14-beta.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.1/clipshift_darwin_arm64.tar.gz"
-      sha256 "de0dc389071111aa50f2d794fefe23ba7f4069bc8855f40b58c1cea37b4c2cb1"
+      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.4/clipshift_darwin_arm64.tar.gz"
+      sha256 "d6abcf1e7dd797d025c048ee10c1b84f388e3ea84d58233c2e0137e12c78c5c7"
 
       def install
         bin.install "clipshift"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.1/clipshift_darwin_amd64.tar.gz"
-      sha256 "13f2483409430136cd2faffcf3bec34713638385a49104289a8a472f2165334f"
+      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.4/clipshift_darwin_amd64.tar.gz"
+      sha256 "0f44a155b1f64b9b7b6a25e556bd445661de45dd681a06b5c0804887981c67cb"
 
       def install
         bin.install "clipshift"
@@ -28,16 +28,16 @@ class Clipshift < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.1/clipshift_linux_amd64.tar.gz"
-      sha256 "74e66bad188a92dc5211dc6a656443fc969a8cf4591a7f0a47654725b3c15cee"
+      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.4/clipshift_linux_amd64.tar.gz"
+      sha256 "f0b1b7b3fe3cdc86500c07913af62ccf7eed2f2cb8bde25bfbb01adeb9f5a997"
 
       def install
         bin.install "clipshift"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.1/clipshift_linux_arm64.tar.gz"
-      sha256 "51abc1c97abcadd3e90fd469074391d8db6bfd7480b286c64ad4f1b4e4818a04"
+      url "https://github.com/getclipshift/clipshift/releases/download/v0.1.14-beta.4/clipshift_linux_arm64.tar.gz"
+      sha256 "e21306754b9cd33e51f52c2817c362e1b37d45dfa7e43d3fda8f840e092df752"
 
       def install
         bin.install "clipshift"

@@ -1,8 +1,8 @@
 cask "clipshift" do
   arch arm: "arm64", intel: "amd64"
-  version "0.1.14-beta.1"
-  sha256 arm: "f783ea184ee2639a67dc267cd8b1af10d459d0b10bcfe8d1d62e9502cec5e711",
-         intel: "9555dbc23e572f46c2082dfc104e33701a9f1849ad2250e897cd3ae06d81475f"
+  version "0.1.14-beta.4"
+  sha256 arm: "b85c8f9804ec2bcf6e4c5e28a46dd9941fc518db4748ea270e611516f9ea579c",
+         intel: "c3a23f80d055a4f4ee89e4d411cbd5291938a2238cea7374ccd930614df6fd50"
   
   url "https://github.com/getclipshift/clipshift/releases/download/v#{version}/clipshift.app_#{arch}.tar.gz"
   name "clipshift"
